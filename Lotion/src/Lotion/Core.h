@@ -7,5 +7,5 @@
 		#define LOTION_API __declspec(dllimport)
 	#endif
 #else
-	#error Lotion only supports Winodws.
+	#error Lotion only supports Windows.
 #endif

@@ -1,0 +1,3 @@
+[submodule "Lotion/vendor/spdlog"]
+	path = Lotion/vendor/spdlog
+	url = https://github.com/gabime/spdlog
