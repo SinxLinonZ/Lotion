@@ -4,6 +4,9 @@
     <Filter Include="Lotion">
       <UniqueIdentifier>{DA1D41C1-C6BF-6B97-AF7A-7FEB9BBBF2E7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lotion\Events">
+      <UniqueIdentifier>{7E70C31E-EA30-3F55-B36B-88D21FEB8331}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Lotion.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Lotion\EntryPoint.h">
       <Filter>Lotion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lotion\Events\ApplicationEvent.h">
+      <Filter>Lotion\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lotion\Events\Event.h">
+      <Filter>Lotion\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lotion\Events\KeyEvent.h">
+      <Filter>Lotion\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lotion\Events\MouseEvent.h">
+      <Filter>Lotion\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Lotion\Log.h">
       <Filter>Lotion</Filter>
