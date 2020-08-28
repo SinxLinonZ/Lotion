@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Lotion/Log.h"
+
 
 #ifdef LT_PLATFORM_WINDOWS
 	#include <Windows.h>

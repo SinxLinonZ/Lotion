@@ -9,6 +9,7 @@ namespace Lotion
 {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -17,9 +18,7 @@ namespace Lotion
 
 	void Application::Run()
 	{
-		
-		Lotion::Log::Init();
-
+/*
 		LT_CORE_INFO("Log System Init...");
 		LT_CORE_TRACE("Trace Log!");
 		LT_CORE_INFO("Info Log!");
@@ -27,7 +26,7 @@ namespace Lotion
 		LT_CORE_ERROR("Error Log!");
 		LT_CORE_CRITICAL("Critical Log!");
 		LT_CORE_TRACE("======================\n");
-		
+
 
 		LT_CORE_INFO("Variable logging test...");
 		int a = 12;
@@ -38,8 +37,12 @@ namespace Lotion
 		LT_CORE_INFO("Event system test....");
 		WindowResizeEvent e(1280, 720);
 		LT_TRACE(e);
+*/
 
-		while (true);
+		while (m_Running)
+		{
+			m_Window->OnUpdate();
+		}
 	}
 }
 

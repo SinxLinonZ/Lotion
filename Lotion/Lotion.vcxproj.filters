@@ -35,6 +35,8 @@
       <Filter>Lotion</Filter>
     </ClInclude>
     <ClInclude Include="src\ltpch.h" />
+    <ClInclude Include="src\Lotion\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Lotion\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Lotion</Filter>
     </ClCompile>
     <ClCompile Include="src\ltpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
