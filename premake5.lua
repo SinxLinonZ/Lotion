@@ -17,6 +17,9 @@ project "Lotion"
 	
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "ltpch.h"
+	pchsource "Lotion/src/ltpch.cpp"
 	
 	files
 	{

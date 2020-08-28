@@ -2,12 +2,12 @@
 
 class Sandbox : public Lotion::Application
 {
-public:
-	Sandbox()
-	{}
-
-	~Sandbox()
-	{}
+//public:
+//	Sandbox()
+//	{}
+//
+//	~Sandbox()
+//	{}
 };
 
 Lotion::Application* Lotion::CreateApplication()
