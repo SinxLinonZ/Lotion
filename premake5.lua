@@ -63,14 +63,17 @@ project "Lotion"
     
     filter "configurations:Debug"
         defines "LT_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "LT_Release"
+        buildoptions "/MD"
         optimize "On"
     
     filter "configurations:Dist"
         defines "LT_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 project "Sandbox"
@@ -110,12 +113,15 @@ project "Sandbox"
     
     filter "configurations:Debug"
         defines "LT_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
     
     filter "configurations:Release"
         defines "LT_Release"
+        buildoptions "/MD"
         optimize "On"
     
     filter "configurations:Dist"
         defines "LT_DIST"
+        buildoptions "/MD"
         optimize "On"

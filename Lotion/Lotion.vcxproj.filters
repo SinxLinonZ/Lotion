@@ -7,6 +7,12 @@
     <Filter Include="Lotion\Events">
       <UniqueIdentifier>{7E70C31E-EA30-3F55-B36B-88D21FEB8331}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Lotion.h" />
@@ -31,21 +37,39 @@
     <ClInclude Include="src\Lotion\Events\MouseEvent.h">
       <Filter>Lotion\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Lotion\Layer.h">
+      <Filter>Lotion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lotion\LayerStack.h">
+      <Filter>Lotion</Filter>
+    </ClInclude>
     <ClInclude Include="src\Lotion\Log.h">
       <Filter>Lotion</Filter>
     </ClInclude>
+    <ClInclude Include="src\Lotion\Window.h">
+      <Filter>Lotion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\ltpch.h" />
-    <ClInclude Include="src\Lotion\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Lotion\Application.cpp">
       <Filter>Lotion</Filter>
     </ClCompile>
+    <ClCompile Include="src\Lotion\Layer.cpp">
+      <Filter>Lotion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lotion\LayerStack.cpp">
+      <Filter>Lotion</Filter>
+    </ClCompile>
     <ClCompile Include="src\Lotion\Log.cpp">
       <Filter>Lotion</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\ltpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
