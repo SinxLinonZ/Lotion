@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Lotion/vendor/GLFW/include"
+IncludeDir["Glad"] = "Lotion/vendor/Glad/include"
 
 include "Lotion/vendor/GLFW"
+include "Lotion/vendor/Glad"
 
 project "Lotion"
     location "Lotion"
@@ -36,12 +38,14 @@ project "Lotion"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
     
     links
     {
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
     
@@ -53,7 +57,8 @@ project "Lotion"
         defines
         {
             "LT_PLATFORM_WINDOWS",
-            "LT_BUILD_DLL"
+            "LT_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
         
         postbuildcommands
